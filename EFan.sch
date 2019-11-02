@@ -172,7 +172,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 2200 4550 2350
 Wire Wire Line
-	3700 2350 4550 2350
+	3700 2350 4200 2350
 Connection ~ 4550 2350
 Wire Wire Line
 	4550 2350 4550 2550
@@ -779,21 +779,6 @@ $EndComp
 Wire Wire Line
 	6050 6850 5950 6850
 Wire Wire Line
-	5350 6750 5250 6750
-$Comp
-L power:GND #PWR0119
-U 1 1 5DC104D2
-P 5250 7250
-F 0 "#PWR0119" H 5250 7000 50  0001 C CNN
-F 1 "GND" H 5255 7077 50  0000 C CNN
-F 2 "" H 5250 7250 50  0001 C CNN
-F 3 "" H 5250 7250 50  0001 C CNN
-	1    5250 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 6750 5250 7250
-Wire Wire Line
 	5350 6950 5300 6950
 Wire Wire Line
 	5300 6950 5300 7100
@@ -918,22 +903,22 @@ Wire Wire Line
 Wire Wire Line
 	4300 4900 4500 4900
 $Comp
-L Connector:TestPoint TP2
+L Connector:TestPoint TP5
 U 1 1 5DB9298C
 P 7400 1900
-F 0 "TP2" V 7595 1972 50  0000 C CNN
-F 1 "TestPoint" V 7504 1972 50  0000 C CNN
+F 0 "TP5" V 7595 1972 50  0000 C CNN
+F 1 "28V" V 7504 1972 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7600 1900 50  0001 C CNN
 F 3 "~" H 7600 1900 50  0001 C CNN
 	1    7400 1900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP1
+L Connector:TestPoint TP3
 U 1 1 5DB93746
 P 6500 7450
-F 0 "TP1" V 6695 7522 50  0000 C CNN
-F 1 "TestPoint" V 6604 7522 50  0000 C CNN
+F 0 "TP3" V 6695 7522 50  0000 C CNN
+F 1 "GND" V 6604 7522 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6700 7450 50  0001 C CNN
 F 3 "~" H 6700 7450 50  0001 C CNN
 	1    6500 7450
@@ -1084,4 +1069,62 @@ Wire Wire Line
 	3700 3050 4300 3050
 Wire Wire Line
 	7750 3450 8050 3450
+Text Label 5100 6750 0    50   ~ 0
+DAC
+Wire Wire Line
+	5100 6750 5350 6750
+Wire Wire Line
+	6600 3750 7050 3750
+Connection ~ 6600 3750
+Text Label 7050 3750 2    50   ~ 0
+DAC
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5DC70BC2
+P 6600 3350
+F 0 "TP4" H 6658 3468 50  0000 L CNN
+F 1 "DAC" H 6658 3377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 6800 3350 50  0001 C CNN
+F 3 "~" H 6800 3350 50  0001 C CNN
+	1    6600 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 3350
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DC71FEC
+P 4200 2350
+F 0 "TP1" H 4258 2468 50  0000 L CNN
+F 1 "NTC" H 4258 2377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 4400 2350 50  0001 C CNN
+F 3 "~" H 4400 2350 50  0001 C CNN
+	1    4200 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 2350
+Wire Wire Line
+	4200 2350 4550 2350
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5DC7279B
+P 5200 2450
+F 0 "TP2" V 5154 2638 50  0000 L CNN
+F 1 "TSET" V 5245 2638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 5400 2450 50  0001 C CNN
+F 3 "~" H 5400 2450 50  0001 C CNN
+	1    5200 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5DC732A9
+P 7750 3450
+F 0 "TP6" H 7808 3568 50  0000 L CNN
+F 1 "FB" H 7808 3477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 7950 3450 50  0001 C CNN
+F 3 "~" H 7950 3450 50  0001 C CNN
+	1    7750 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 7750 3450
 $EndSCHEMATC
