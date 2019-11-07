@@ -1103,7 +1103,7 @@ F 3 "~" H 4400 2350 50  0001 C CNN
 $EndComp
 Connection ~ 4200 2350
 Wire Wire Line
-	4200 2350 4550 2350
+	4200 2350 4300 2350
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5DC7279B
@@ -1127,4 +1127,44 @@ F 3 "~" H 7950 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7750 3450
+$Comp
+L Device:C C13
+U 1 1 5DC6CB68
+P 5550 2700
+F 0 "C13" H 5665 2746 50  0000 L CNN
+F 1 "104" H 5665 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5588 2550 50  0001 C CNN
+F 3 "~" H 5550 2700 50  0001 C CNN
+	1    5550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5DC6D19A
+P 4300 2700
+F 0 "C12" H 4415 2746 50  0000 L CNN
+F 1 "104" H 4415 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4338 2550 50  0001 C CNN
+F 3 "~" H 4300 2700 50  0001 C CNN
+	1    4300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2850 4300 2900
+Wire Wire Line
+	4300 2900 4550 2900
+Wire Wire Line
+	4300 2550 4300 2350
+Connection ~ 4300 2350
+Wire Wire Line
+	4300 2350 4550 2350
+Wire Wire Line
+	5550 2550 5550 2450
+Wire Wire Line
+	5550 2450 5200 2450
+Wire Wire Line
+	5550 2850 5550 2900
+Wire Wire Line
+	5550 2900 5400 2900
+Connection ~ 5400 2900
 $EndSCHEMATC
