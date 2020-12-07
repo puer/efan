@@ -20,3 +20,7 @@ toff = 20us / (1+0.37) = 14.6 us
 ton(max)  = 5.4us
 
 Ct = ton(max) * 0.4 u = 216pF = 220 pF
+
+Ipk = 50mA * 2 = 100mA
+
+L = 853uH
